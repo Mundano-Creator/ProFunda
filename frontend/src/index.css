@@ -6,13 +6,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f7f7f7;
+  background-color: #31ff1a;
 }
 
 .container {
   width: 100%;
   max-width: 400px;
-  background: white;
+  background: rgb(196, 155, 185);
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
