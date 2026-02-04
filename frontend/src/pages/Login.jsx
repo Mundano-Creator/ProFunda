@@ -8,7 +8,7 @@ const Login = () => {
       <form>
         <div className="form-group">
           <label htmlFor="email">Correo</label>
-          <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
+          <input type="email" id="email" name="email" placeholder="Correo papoi" required />
         </div>
         <div className="form-group">
           <label htmlFor="password">Contraseña</label>

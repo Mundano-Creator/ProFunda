@@ -1,3 +1,6 @@
+.body-wrapper {
+  /* wrapper in case you need a separate full-viewport background */
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,16 +8,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #ffffff;
+  min-height: 100vh; /* use full viewport height to center vertically */
+  background-color: #ff8f8f;
+  background-image: url("https://i.ytimg.com/vi/NcdrqSFc9ms/maxresdefault.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 .container {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px; /* reasonable form width */
   background: rgb(255, 255, 255);
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 form {
@@ -29,18 +36,24 @@ form {
 input, select, button {
   padding: 10px;
   margin: 5px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #f0ebeb;
   border-radius: 5px;
 }
 
 button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #e5f1a8;
+  color: rgb(47, 51, 10);
   cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  background-color: #c4d65a;
+}
+body:hover .container button {
+  transform: translateY(-6px);
 }
 
 a {
