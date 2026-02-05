@@ -18,35 +18,69 @@ body {
 }
 
 form {
+  border: 1px solid #050505;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
 }
-
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 .form-group {
   margin-bottom: 15px;
+}
+.form-group input {
+  margin-top: 10px;
+  display: block;
+} 
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 12px;
+}
+
+.registro-container .form-actions,
+.registro-container > form > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 input, select, button {
   padding: 10px;
   margin: 5px 0;
-  border: 1px solid #ddd;
+  border: 0.5px solid #000000;
   border-radius: 5px;
 }
 
+.form-group select {
+  margin-left: 20px;
+  width: 150px;
+}
+
+input  {
+  width: 500px;
+}
 button {
-  background-color: #4CAF50;
-  color: white;
+  margin-left: 50px;
+  width: 150px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 a {
   text-align: center;
   margin-top: 15px;
-  display: block;
   color: #007BFF;
   text-decoration: none;
 }
