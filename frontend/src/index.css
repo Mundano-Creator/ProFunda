@@ -25,41 +25,88 @@ body {
 }
 
 form {
+  border: 1px solid #050505;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
 }
-
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 .form-group {
   margin-bottom: 15px;
+}
+.form-group input {
+  margin-top: 10px;
+  display: block;
+} 
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 12px;
+}
+
+.registro-container .form-actions,
+.registro-container > form > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 input, select, button {
   padding: 10px;
   margin: 5px 0;
+<<<<<<< HEAD
   border: 1px solid #f0ebeb;
+=======
+  border: 0.5px solid #000000;
+>>>>>>> 82b69cb6f8e00730b2e7ca2d6aac7d501b53d008
   border-radius: 5px;
 }
 
+.form-group select {
+  margin-left: 20px;
+  width: 150px;
+}
+
+input  {
+  width: 500px;
+}
 button {
+<<<<<<< HEAD
   background-color: #e5f1a8;
   color: rgb(47, 51, 10);
+=======
+  margin-left: 50px;
+  width: 150px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+>>>>>>> 82b69cb6f8e00730b2e7ca2d6aac7d501b53d008
   cursor: pointer;
   transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
 }
 
 button:hover {
+<<<<<<< HEAD
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   background-color: #c4d65a;
 }
 body:hover .container button {
   transform: translateY(-6px);
+=======
+  background-color: #000000;
+  color: #ffffff;
+>>>>>>> 82b69cb6f8e00730b2e7ca2d6aac7d501b53d008
 }
 
 a {
   text-align: center;
   margin-top: 15px;
-  display: block;
   color: #007BFF;
   text-decoration: none;
 }
