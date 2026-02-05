@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <!-- top blue figure -->
+  <path d="M200 48 C240 4 320 4 360 48 C320 28 240 28 200 48 Z" fill="#2aa1ff" opacity="1" />
+  <circle cx="260" cy="60" r="18" fill="#2aa1ff" />
+
+  <!-- left yellow figure -->
+  <path d="M80 150 C60 120 40 100 24 80 C40 108 64 140 96 164 C110 176 140 186 160 180 C140 168 110 150 80 150 Z" fill="#ffd166" />
+  <circle cx="96" cy="126" r="14" fill="#ffd166" />
+
+  <!-- right orange figure -->
+  <path d="M320 150 C340 120 360 100 376 80 C360 108 336 140 304 164 C290 176 260 186 240 180 C260 168 290 150 320 150 Z" fill="#ff7a54" />
+  <circle cx="304" cy="126" r="14" fill="#ff7a54" />
+
+  <!-- stylized arcs to mimic swooshes -->
+  <path d="M60 120 C120 80 200 80 260 120" stroke="#ffd166" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.9" />
+  <path d="M140 80 C200 40 280 40 340 80" stroke="#2aa1ff" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.95" />
+  <path d="M180 140 C220 100 300 100 340 140" stroke="#ff7a54" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.95" />
+
+  <!-- Text -->
+  <text x="200" y="320" font-family="Georgia, 'Times New Roman', Times, serif" font-size="40" font-weight="700" fill="#111" text-anchor="middle">NON PROFIT</text>
+  <text x="200" y="355" font-family="Georgia, 'Times New Roman', Times, serif" font-size="14" fill="#333" text-anchor="middle">CONECTANDO COMUNIDAD</text>
+
+</svg>

@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BackgroundVideo from "../components/BackgroundVideo";
 
 const Registro = () => {
   return (
-    <div className="registro-container">
+    <>
+      <BackgroundVideo videoId="t6JhJ9a6G40" />
+      <div className="registro-container">
       <form>
         <h2>Registro</h2>
         <div className="form-group">
@@ -34,7 +37,8 @@ const Registro = () => {
         <Link to="/">¿Ya tienes cuenta? Inicia sesión</Link>
         </div>
       </form>
-    </div>
+      </div>
+    </>
   );
 };
 

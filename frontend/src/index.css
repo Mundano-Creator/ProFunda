@@ -9,6 +9,7 @@ body {
   background-color: #ffffff;
 }
 
+
 .container {
   width: 100%;
   max-width: 400px;
@@ -88,3 +89,45 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Background video styles */
+.video-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.video-bg iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.78vh; /* 16:9 ratio to cover */
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  border: 0;
+}
+
+.video-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.6); /* ajustar opacidad si es necesario */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* asegurar contenido por encima del video */
+.container, .login-container, .registro-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* login logo under heading */
+.login-logo {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
