@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BackgroundVideo from "../components/BackgroundVideo";
+import "./Registro.css";
 
 const Registro = () => {
   return (
     <>
-      <BackgroundVideo videoId="t6JhJ9a6G40" />
       <div className="registro-container">
       <form>
         <h2>Registro</h2>

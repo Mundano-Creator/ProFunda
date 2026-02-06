@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BackgroundVideo from "../components/BackgroundVideo";
-import logo from "../assets/logo.png";
+import "./Login.css";
 
 const Login = () => {
   return (
     <>
-      <BackgroundVideo videoId="t6JhJ9a6G40" />
       <div className="login-container">
         <form>
           <h2><center>Bienvenidos</center></h2>
-          <img src={logo} alt="logo" className="login-logo" />
           <div className="form-group">
             <label htmlFor="email">Correo</label> 
             <input type="email" id="email" name="email" placeholder="Correo electrónico" required />

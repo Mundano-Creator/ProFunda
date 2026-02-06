@@ -18,12 +18,6 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 form {
   border: 1px solid #050505;
   padding-left: 50px;
@@ -36,7 +30,10 @@ form {
   background-repeat: no-repeat;
   background-position: center;
 }
-
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 .form-group {
   margin-bottom: 15px;
 }
@@ -50,10 +47,7 @@ form {
   gap: 80px;
   margin-top: 12px;
 }
-.form-group select {
-  margin-left: 20px;
-  width: 150px;
-}
+
 .registro-container .form-actions,
 .registro-container > form > div:last-child {
   display: flex;
@@ -68,7 +62,10 @@ input, select, button {
   border-radius: 5px;
 }
 
-
+.form-group select {
+  margin-left: 20px;
+  width: 150px;
+}
 
 input  {
   width: 500px;
@@ -96,5 +93,32 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* asegurar contenido por encima del video */
+.container, .login-container, .registro-container {
+  position: relative;
+  z-index: 2;
+}
+
+.login-container form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../assets/logowidth.jpeg');
+  background-size: 550px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  opacity: 1; /* Ajusta la opacidad del logo */
+  pointer-events: none;
+  z-index: 0;
+}
+
+.login-container form > * {
+  position: relative;
+  z-index: 1;
 }
 
