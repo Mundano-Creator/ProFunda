@@ -1,17 +1,16 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Registro from "./pages/Registro";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from './components/Login';
+import FundacionesLista from './components/FundacionesLista';
 
-const App = () => {
+function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/registro" element={<Registro />} />
+        <Route path="/fundaciones" element={<FundacionesLista />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;
